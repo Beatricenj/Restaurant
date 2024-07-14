@@ -1,0 +1,580 @@
+@import url('https://fonts.googleapis.com/css2?family=Beiruti:wght@200..900&display=swap');
+:root {
+    --main-color: #deab5f;
+    --primary-color: #312e22;
+}
+
+/* Utility Styles */
+button {
+    padding: 10px 30px;
+    background: var(--main-color);
+    border: none;
+    cursor: pointer;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #100e0f;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between; /* Adjust space distribution */
+    align-items: center;
+    color: #fff;
+    font-family: sans-serif;
+    padding: 0 3px;
+    margin-right: 4rem;
+}
+
+
+nav img {
+    width: 100px; /* Set a specific width for the circular image */
+    height: 100px; /* Set a specific height for the circular image */
+    object-fit: cover; /* Ensure the image covers the container */
+    border-radius: 50%; /* Make the image circular */
+    margin-right: auto; /* Push the image to the leftmost side */
+}
+
+
+li {
+    display: inline;
+    list-style: none;
+}
+
+li a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 40px;
+}
+
+li a:hover {
+    border-bottom: 2px solid var(--main-color);
+}
+
+/* Header start */
+.header {
+    height: 100vh;
+    font-family: "Beiruti", sans-serif;
+    font-weight: normal;
+
+    /* Flexbox */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    position: relative;
+    text-align: center;
+}
+
+.main-headings {
+    font-size: 4rem;
+    margin-bottom: 1rem; /* Add space below the main heading */
+}
+
+.primary-heading {
+    font-size: 2.5rem;
+    margin-bottom: 2rem; /* Add space below the primary heading */
+}
+
+.main-btn {
+    margin-bottom: 2rem; /* Add space below the button */
+}
+
+/* Style for the circular image within the header */
+.header img {
+    width: 200px; /* Set a specific width for the circular image */
+    height: 200px; /* Set a specific height for the circular image */
+    border-radius: 50%; /* Make the image circular */
+    object-fit: cover; /* Ensure the image covers the container */
+    margin-top: 2rem; /* Add space above the image */
+}
+
+
+
+#our-story{
+    height: 100vh;
+    margin-top: 15;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+ .img{
+    width: 300px;
+    height: 300px;
+    background-position:  center ;
+    background-size: cover;
+    margin-left: 4rem;
+ }
+ .title-style{
+    display: flex;
+    align-items: center;
+
+ }
+ .title{
+    font-family:"Beiruti", sans-serif;
+    font-size: 4rem;
+    color: #fff;
+    transform:translateX(-100px);
+ }
+ .line{
+    width:100px;
+    height:2px;
+    background: #fff;
+    transform:translateX(-120px);
+ }
+ .section-content p{
+    max-width: 500px;
+    color:#fff ;
+    font-family:"Beiruti", sans-serif;
+    font-size: 30px; 
+    line-height: 40px;
+    margin: 20px 0px;
+ }
+ /*End of Story  */
+
+ /* Coffee  */
+ /* Coffee Section */
+.coffee-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10rem;
+    margin-left: 4rem;
+}
+
+.img-container {
+    flex: 1; /* Take up remaining space */
+    text-align: center; /* Center align the image */
+}
+
+.img-container img {
+    width: 100%; /* Ensure the image fills its container */
+    max-width: 400px; /* Limit maximum width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.content-section {
+    flex: 1; /* Take up remaining space */
+    padding: 0 2rem; /* Add padding to content section */
+}
+
+.content-section p {
+    max-width: 500px;
+    color: #fff;
+    font-size: 30px;
+    margin-bottom: 20px;
+
+}
+
+.title-two {
+    font-size: 30px;
+    color: #fff;
+    font-family: "Beiruti", sans-serif;
+    font-weight: normal;
+    margin-bottom: 20px;
+    margin-left: 4rem; /* Adjust margin to move title away from the edge */
+}
+
+
+/* Product Section */
+.products{
+    
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.title three{
+    font-size:30px;
+    color: #fff;
+    font-family: "Beiruti", sans-serif;
+    font-weight: normal;
+    margin-bottom: 20px;
+   
+}
+
+.cards{
+    
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.card{
+    border: 2px solid var(--main-color);
+    padding: 0 20px;
+    height: 700px;
+    width:400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 5px;
+    position: relative;
+    margin-bottom: 4rem;
+
+}
+.card-image image one{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: -60px;
+    background-position:right;
+    background-size: cover;
+    
+   
+
+   
+}
+.card-image image two{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: -60px;
+    background-position:right;
+    background-size: cover;
+   
+
+   
+}
+.card-image image three{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: -60px;
+    background-position:right;
+    background-size: cover;
+    
+   
+
+   
+}
+
+.card-title{
+    color: #fff;
+    font-family:"Beiruti", sans-serif ;
+    margin-top: 70px;
+}
+
+.items p{
+    color: #fff;
+    margin: 20px 0;
+    font-family:"Beiruti", sans-serif ;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: center; /* Center the containers horizontally */
+    align-items: center; /* Center the containers vertically */
+    background-color: #000; /* Set a background color for contrast */
+    color: #fff; /* Set text color to white */
+    padding: 20px 0; /* Add padding for spacing */
+    flex-wrap: wrap; /* Allow items to wrap onto multiple lines if necessary */
+}
+
+footer .container {
+    margin: 20px;
+    max-width: 300px;
+    text-align: center;
+    flex: 1; /* Distribute available space evenly */
+}
+
+footer .heading-info {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+footer p {
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+footer .heading-info span {
+    color: var(--main-color); /* Optional: Set a different color for the span if needed */
+}
+
+footer .copyright {
+    margin-top: 20px; /* Add space between the containers and the copyright text */
+    font-size: 14px; /* Adjust font size if necessary */
+    text-align: center; /* Center align the copyright text */
+    width: 100%; /* Ensure the copyright text takes full width */
+}
+/* Responsiveness */
+@media only screen and(max-width:768px){
+    .main-headings,.primary-heading{
+        font-size: 2.5rem;
+    }
+    #our-story{
+        text-align: center;
+    }
+    #our-story .title{
+        transform: translateX(50px);
+    }
+    .content-section{
+        text-align: center;
+    }
+    #our-story .img-container{
+        width: 70%;
+        text-align: center;
+        margin: 0 auto;
+    }
+    
+}
+
+
+/* About */
+.about {
+    display: flex;
+    justify-content: space-between; /* Distribute items with space between them */
+    align-items: center;
+    margin-left: 3cm; /* Position the section 3cm from the left edge */
+    margin-top: 10rem; /* Keep the existing top margin */
+    color: #fff; /* Ensure text is white */
+}
+
+/* Content section styles */
+.content-section {
+    flex: 1; /* Grow to take available space */
+    margin-right: 10px; /* Space between content and image */
+}
+
+.content-section p {
+    max-width: 500px;
+    color: #fff;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+/* Title styles */
+.title-four {
+    font-size: 30px;
+    color: #fff;
+    font-family: "Beiruti", sans-serif;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+/* Image container styles */
+.image-container2 {
+    flex-shrink: 0; /* Do not shrink the image container */
+    margin-right: 4rem;
+}
+
+
+.serve {
+    width: 150px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-top: 20px;
+}
+
+
+.ncrowd {
+    width: 150px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-top: 20px;
+    margin-left: 10px; /* Adjust left margin to bring it closer */
+}
+/* blogs */
+.Blogs {
+    text-align: center; /* Center align the content */
+    color: #fff; /* Text color */
+    margin-top: 10rem; /* Adjust margin as needed */
+}
+.title-five {
+    font-size: 2rem; /* Adjust font size */
+    font-family: "Beiruti", sans-serif;
+    margin-bottom: 2rem; /* Add space below the title */
+}
+.cards {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card1 {
+    text-align: center;
+    width: 300px; /* Adjust card width as needed */
+    height: 500px;
+    padding: 20px;
+    margin-bottom: 2rem; /* Add space between cards */
+    background-color: #333; /* Background color for the card */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle effect */
+}
+
+.card-image img {
+    width: 100%; /* Ensure image fills its container */
+    max-width: 100%; /* Limit maximum image width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners for the image */
+}
+
+.card-title h1 {
+    font-size: 1.5rem; /* Adjust title font size */
+    margin-top: 1rem; /* Add space above title */
+}
+
+.blog-content {
+    margin-top: 1rem; /* Add space above paragraph */
+    color: #fff; /* Text color */
+}
+
+/* Menu Page */
+.title-six{
+    font-size: 40px;
+    color: #fff;
+    font-family: "Beiruti", sans-serif;
+    font-weight: normal;
+    margin-bottom: 10px;
+    text-align: center;
+}
+ 
+.menu-category {
+    margin-bottom: 20px; /* Add margin between sections */
+    margin-top: 0%;
+    text-align: left; 
+    padding-left: 2rem;
+    color: #fff; /* Ensure text is white */
+    font-size: 40px;
+}
+
+.menu-content {
+    display: flex;
+    justify-content: space-between; /* Ensure space between items and image */
+    align-items: flex-start; /* Align items at the top */
+}
+
+.menu-items {
+    display: flex;
+    flex-direction: column; /* Align items vertically */
+    flex-grow: 1; /* Allow it to take up remaining space */
+}
+
+.menu-item {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    justify-content: space-between; /* Add space between item and price */
+    align-items: center;
+    margin-bottom: 1.5rem;
+    padding: 0;
+    border-bottom: 1px solid #fff;
+    width: 64%; /* Ensure the menu item takes the full width of the container */
+    margin-left: 10px;
+}
+
+.item-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row; /* Ensure items are aligned horizontally */
+    margin: 2px;
+    font-size: 1.5rem;
+    text-align: left;
+}
+
+.item-details h3 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.item-details span {
+    font-size: 1.5rem;
+    color: var(--main-color); /* Use the main color for the price */
+    margin-left: 200px;
+}
+
+.image-container {
+    display: flex;
+    align-items: flex-start; /* Align image at the top with the menu items */
+    margin-right: 11rem;
+}
+
+.image-container img {
+   
+    width: 250px; /* Adjust image width as needed */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+}
+/* Contact Form */
+.title-seven{
+    color:#deab5f;
+}
+
+#contact {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#contact form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#contact h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#contact label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact textarea,
+#contact select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#contact textarea {
+    height: 150px;
+}
+
+#contact button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#contact button:hover {
+    background-color: #45a049;
+}
+
+#contact button[type="button"] {
+    background-color: #f44336;
+    margin-left: 10px;
+}
+
+#contact button[type="button"]:hover {
+    background-color: #e53935;
+}
+
+.form-messages {
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}

@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+    <nav>
+        <img src="images/logo.jpg" alt="logo">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+<section id="contact">
+    <h2 class="title-seven">Contact Us</h2>
+    <p>Have questions or suggestions? Reach out to us!</p>
+    <form id="contactForm" action="https://formsubmit.co/b7f14c8779d7c24864dfb59c536bf326 " method="POST">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="service">Select Service:</label>
+        <select name="Service" id="service">
+            <option>Question</option>
+            <option>Comments</option>
+        </select>
+
+        <label for="message">Your Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Send Message</button>
+        <button type="button" onclick="window.location.href='index.html';">Exit</button>
+    </form>
+    <div id="formMessages" class="form-messages"></div>
+</section>
+
+
+
+<body>
+</html>
